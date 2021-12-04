@@ -4,10 +4,12 @@
 	<modelVersion>4.0.0</modelVersion>
 	<packaging>pom</packaging>
 
+	<!--	Modules : Untuk mensatate child module apa aja	-->
 	<modules>
 		<module>web-app</module>
 	</modules>
 
+	<!--	Parent : Semua dependency parent pasti ada di child	-->
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
@@ -15,20 +17,23 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
+	<!--	Metadata : data tentang project	-->
 	<groupId>com.latif</groupId>
 	<artifactId>web</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>web</name>
 	<description>Demo project for Spring Boot</description>
 
+	<!--	Properties : Buat set properties atau variabel	-->
 	<properties>
 		<java.version>11</java.version>
 	</properties>
 
+	<!--	Dependencies : Buat set dependencies yang dibutuhkan	-->
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter</artifactId>
+			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
 		<dependency>
@@ -38,6 +43,7 @@
 		</dependency>
 	</dependencies>
 
+	<!--	Build Plugins : Untuk menambahkan plugins pada Meaven	-->
 	<build>
 		<plugins>
 			<plugin>
