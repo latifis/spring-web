@@ -9,6 +9,9 @@
 		<module>web-app</module>
 		<module>product-api</module>
 		<module>product-impl</module>
+		<module>order-api</module>
+		<module>order-impl</module>
+		<module>order-app</module>
 	</modules>
 
 	<!--	Parent : Semua dependency parent pasti ada di child	-->
