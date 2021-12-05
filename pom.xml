@@ -8,6 +8,7 @@
 	<modules>
 		<module>web-app</module>
 		<module>product-api</module>
+		<module>product-impl</module>
 	</modules>
 
 	<!--	Parent : Semua dependency parent pasti ada di child	-->
