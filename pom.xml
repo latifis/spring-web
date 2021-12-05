@@ -56,13 +56,6 @@
 	</dependencies>
 
 	<!--	Build Plugins : Untuk menambahkan plugins pada Meaven	-->
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</build>
+	<!-- kena pindah ke web-app	-->
 
 </project>
