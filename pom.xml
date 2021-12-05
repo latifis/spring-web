@@ -18,6 +18,7 @@
 	</parent>
 
 	<!--	Metadata : data tentang project	-->
+	<!--	Nama huruf kecil semua, kalau ada spasi pakai titik	-->
 	<groupId>com.latif</groupId>
 	<artifactId>web</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
