@@ -29,6 +29,7 @@
 	<!--	Properties : Buat set properties atau variabel	-->
 	<properties>
 		<java.version>11</java.version>
+		<lombok.version>1.18.22</lombok.version>
 	</properties>
 
 	<!--	Dependencies : Buat set dependencies yang dibutuhkan	-->
@@ -42,6 +43,14 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+
+		<!--	Lombok	-->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>${lombok.version}</version>
+			<scope>provided</scope>
 		</dependency>
 	</dependencies>
 
