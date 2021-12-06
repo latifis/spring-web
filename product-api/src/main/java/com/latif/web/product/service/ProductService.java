@@ -10,7 +10,7 @@ public interface ProductService {
 
     List<ProductOutput> getAll();
 
-    ProductOutput addOne(ProductInput input);
+    void addOne(ProductInput input);
 
     void deleteOne(Long id);
 }
