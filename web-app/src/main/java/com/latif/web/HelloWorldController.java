@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/helloWorld") //buat path apa
 public class HelloWorldController {
 
-    @PostMapping
+    @GetMapping
     public HelloWorld getHelloWorld(){
         return new HelloWorld();
     }
