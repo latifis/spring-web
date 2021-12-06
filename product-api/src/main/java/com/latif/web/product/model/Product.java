@@ -24,7 +24,7 @@ public class Product implements Serializable {
     @Column(unique = true, nullable = false, length = 255)
     private String name;
 
-    @Column
+    @Column //kalau mau ganti nama tinggal => column(name = "desc")
     private String description;
 
     @Column
