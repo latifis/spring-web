@@ -13,6 +13,10 @@ import java.util.List;
 @RequestMapping("/product")
 @RequiredArgsConstructor
 public class ProductController {          //pakai implements ProductService untuk create  get add and all
+    //kalau ada 2 pakai
+    //@autowired
+    //@Qualifier("productServiceImpl")
+    //private ProductService productService;
     private final ProductService productService;
 
     @GetMapping("/{id}")
