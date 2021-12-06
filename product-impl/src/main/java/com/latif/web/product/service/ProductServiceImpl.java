@@ -47,6 +47,13 @@ public class ProductServiceImpl implements ProductService{
 
     @Override
     public ProductOutput addOne(ProductInput input) {
+        Product product = Product
+                .builder()
+                .name(input.getName())
+                .description(input.getDescription())
+                .price(input.getPrice())
+                .build();
+        this.repository.save(product);
         return null;
     }
 
