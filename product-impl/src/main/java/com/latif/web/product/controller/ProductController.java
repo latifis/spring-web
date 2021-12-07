@@ -27,8 +27,8 @@ public class ProductController {          //pakai implements ProductService untu
     }
 
     @GetMapping
-    public List<ProductOutput> getAll() {
-        return null;
+    public ResponseEntity<List<ProductOutput>> getAll() {
+        return ResponseEntity.ok(productService.getAll());
     }
 
     @PostMapping
