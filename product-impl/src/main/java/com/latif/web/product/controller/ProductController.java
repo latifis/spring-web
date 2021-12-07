@@ -5,7 +5,11 @@ import com.latif.web.product.dto.input.ProductInput;
 import com.latif.web.product.dto.output.ProductOutput;
 import com.latif.web.product.service.ProductService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.FieldError;
+import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
@@ -43,4 +47,14 @@ public class ProductController {          //pakai implements ProductService untu
         return ResponseEntity.ok(Boolean.TRUE);
     }
     //ResponEntity untuk memberikan respon entity 200 atau 400 dsb
+
+    @ExceptionHandler(MethodArgumentNotValidException.class)
+    @ResponseStatus(code = HttpStatus.BAD_REQUEST)
+    @ResponseBody
+    public BaseResponse<?> handleValidationError(MethodArgumentNotValidException ex) {
+        BindingResult bindingResult = ex.getBindingResult();
+        FieldError fieldError = bindingResult.getFieldError();
+        String defaultMessage = fieldError.getDefaultMessage();
+        return new BaseResponse<>(false, defaultMessage);
+    }
 }
