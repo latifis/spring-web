@@ -13,7 +13,7 @@ import javax.validation.constraints.Pattern;
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
 public class ProductInput {
 
-    @Pattern(regexp = "/^[a-zA-Z]*$/", message = "Nama harus alfabet dan numerik")
+    @Pattern(regexp = "^[a-zA-Z]+$", message = "Nama harus alfabet")
     private String name;
 
 //    @NotBlank //ada isi tapi blank (" ")
@@ -23,6 +23,6 @@ public class ProductInput {
     @NotBlank(message = "description tidak boleh blank")
     private String description;
 
-    @NotNull(message = "description tidak boleh null")
+    @NotNull(message = "price tidak boleh null")
     private Double price;
 }
