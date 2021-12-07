@@ -1,10 +1,9 @@
 package com.latif.web.product.service;
 
+import com.latif.web.data.product.Product;
 import com.latif.web.product.dto.input.ProductInput;
 import com.latif.web.product.dto.output.ProductOutput;
-import com.latif.web.product.model.Product;
 import com.latif.web.product.repository.ProductRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

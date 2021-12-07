@@ -10,6 +10,7 @@
 		<module>product-api</module>
 		<module>product-impl</module>
 		<module>product-data</module>
+		<module>common-api</module>
 	</modules>
 
 	<!--	Parent : Semua dependency parent pasti ada di child	-->
